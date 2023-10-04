@@ -1,4 +1,5 @@
 import css from '../ContactList/ContactList.module.css';
+
 export const ContactList = ({ contacts, children, deleteContact }) => {
   return (
     <div className={css.contacts}>
@@ -23,3 +24,4 @@ export const ContactList = ({ contacts, children, deleteContact }) => {
     </div>
   );
 };
+

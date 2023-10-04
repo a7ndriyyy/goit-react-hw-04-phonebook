@@ -1,9 +1,9 @@
+import { useState } from 'react';
 import css from '../Filter/Filter.module.css';
-import { Component } from 'react';
 
-export class Filter extends Component {
-  render() {
-    const { filter, addFilter } = this.props;
+
+export const Filter = () => {
+    const { filter, addFilter } = useState();
     return (
       <div className={css.filter}>
         <input
@@ -17,4 +17,4 @@ export class Filter extends Component {
       </div>
     );
   }
-}
+
