@@ -1,9 +1,9 @@
-import { useState } from 'react';
+
 import css from '../Filter/Filter.module.css';
 
 
-export const Filter = () => {
-    const { filter, addFilter } = useState();
+export const Filter = (props) => {
+    const { filter, addFilter } = props;
     return (
       <div className={css.filter}>
         <input
